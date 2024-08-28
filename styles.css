@@ -1,0 +1,153 @@
+/* .container{
+    display: flex;
+}
+.testimonial{
+    border: 1px solid hsl(263, 55%, 52%) 
+}
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+    .footer { font-size: 11px; text-align: center; }
+    .footer a { color: hsl(228, 45%, 44%); }
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h2 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.testimonial__Daniel,
+.testimonial__Jonathan,
+.testimonial__Patrick {
+  color: hsl(210, 46%, 95%);
+}
+
+.testimonial__Daniel {
+  background-color: hsl(263, 55%, 52%);
+}
+
+.testimonial__Jonathan {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.testimonial__Patrick {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.testimonial__Jeanette,
+.testimonial__Kira {
+  color: hsl(217, 19%, 35%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  background-color: hsl(210, 46%, 95%);
+  min-height: 56.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div:first-child {
+  position: relative;
+}
+div:first-child h2 {
+  z-index: 1;
+}
+div:first-child .quotation {
+  position: absolute;
+  top: 0;
+  right: 15%;
+}
+
+main {
+  display: grid;
+  gap: 1.5rem;
+  margin: 5rem 1.5rem;
+  max-width: 69.375rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main div {
+  padding: 1.7rem 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+main div picture {
+  display: flex;
+  align-items: center;
+  gap: 1.0625rem;
+}
+main div picture img {
+  height: 1.75rem;
+  border-radius: 50%;
+  align-self: flex-start;
+}
+main div picture caption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  line-height: 1em;
+}
+main div picture caption p:last-child {
+  line-height: 1.5em;
+  font-size: 0.6875rem;
+  opacity: 50%;
+}
+main div h2 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  padding: 0.835rem 0 1.28rem;
+  font-weight: 600;
+}
+main div p {
+  line-height: 1.385;
+  font-size: 0.8125rem;
+  opacity: 70%;
+}
+
+@media (min-width: 64rem) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5625rem 1.875rem;
+  }
+  main .testimonial__Daniel,
+  main .testimonial__Patrick {
+    grid-column: span 2;
+  }
+  main .testimonial__Daniel figure img,
+  main .testimonial__Patrick figure img {
+    border: 1px violet solid;
+  }
+ .footer.last.last {
+    grid-area: 1/4/span 2;
+  } 
+}
