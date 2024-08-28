@@ -10,12 +10,6 @@
   padding: 0;
 }
 
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-    .footer { font-size: 11px; text-align: center; }
-    .footer a { color: hsl(228, 45%, 44%); }
-}
 
 img,
 svg {
@@ -127,7 +121,7 @@ main div p {
   font-size: 0.8125rem;
   opacity: 70%;
 }
-/*
+
 @media (min-width: 64rem) {
   main {
     grid-template-columns: repeat(4, 1fr);
@@ -141,8 +135,21 @@ main div p {
   main .testimonial__Patrick figure img {
     border: 1px violet solid;
   }
- .footer.last.last {
-    grid-area: 1/4/span 2;
-  } 
+
+  main .testimonial__Daniel {
+    grid-area:1/1/2/3
+  }
+
+  main.testimonial__Jeanette{
+    grid-area:2/1/2/2
+  }
+
+  main .testimonial__Patrick {
+    grid-area:2/2/3/4
+  }
+
+  main .testimonial__Kira {
+    grid-area:1/5/3/4
+ 
 }
-  */
+}
